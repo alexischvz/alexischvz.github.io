@@ -1,0 +1,58 @@
+@import "variables";
+.btnmenu {
+    visibility: hidden;
+    position: fixed;
+    z-index: 999;
+    bottom: 3vh;
+    right: 3vw;
+    outline: 0;
+    background-color: $color-blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 4.2rem;
+    width: 4.2rem;
+}
+
+.section {
+    // min-height: 100vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    // border: 1px solid $color-blue;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    h1 {
+        text-align: center;
+        padding-bottom: 1rem;
+        color: rgba(0, 0, 0, .6);
+        font-size: $sizeh1;
+    }
+}
+
+// #projects {
+//     min-height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+@media screen and (max-width: 750px) {
+    .btnmenu {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section {
+        margin: 0 .5rem;
+        padding: 5rem .5rem;
+    }
+}

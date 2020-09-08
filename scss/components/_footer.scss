@@ -1,0 +1,30 @@
+@import "variables";
+footer {
+    width: 100%;
+    // min-height: 200px;
+    padding: 3rem 0;
+    background: rgb(34, 34, 34);
+    background: linear-gradient(90deg, rgba(34, 34, 34, 1) 0%, rgba(53, 53, 53, 1) 47%, rgba(34, 34, 34, 1) 100%);
+    .container {
+        // border: 1px solid #000;
+        max-width: 1200px;
+        padding: 1rem;
+        margin: 0 auto;
+        p {
+            font-size: 20px;
+            text-align: center;
+            line-height: 1.6;
+            color: #fff;
+            margin: 1rem 0;
+            a {
+                color: $color-blue;
+                text-decoration: none;
+                transition: .5s ease;
+                &:hover {
+                    border-bottom: 1px solid $color-rose;
+                    border-top: 1px solid $color-rose;
+                }
+            }
+        }
+    }
+}
